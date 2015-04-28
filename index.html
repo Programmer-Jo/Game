@@ -16,6 +16,47 @@
       <a href="https://github.com/Programmer-Jo/game" class="btn">View on GitHub</a>
       <a href="https://github.com/Programmer-Jo/game/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/Programmer-Jo/game/tarball/master" class="btn">Download .tar.gz</a>
+      <scrpit>
+        //rock paper scissors
+alert ("This is a game of rock paper scissors, click ok to play");
+var opt = prompt("What would you like to play?");
+var com = Math.random()
+//cheatcode
+if(opt == "cheatcode"){
+    alert("You have won, but only because you cheated!");
+}else{
+if(com < 0.33){
+    alert ("The computer chose rock");
+    if(opt == "rock"){
+        alert("The game was a draw");
+    }else if(opt == "paper"){
+        alert("You have won the game");
+    }else{
+        alert("You have lost the game");
+    }
+}else if (com <0.66 && com >0.33){
+    alert ("The computer chose scissors");
+    if(opt == "rock"){
+        alert("You have won the game");
+    }else if(opt == "paper"){
+        alert("You have lost the game");
+    }else{
+        alert("The game is a draw");
+    }
+}else{
+    alert ("The computer chose paper");
+    if(opt == "rock"){
+        alert("You have lost the game");
+    }else if(opt == "paper"){
+        alert("The gae is a draw");
+    }else{
+        alert("You have won the game");
+    }
+}
+}
+        </scrpit>
+        
+      </scrpit>
     </section>
 
     <section class="main-content">
